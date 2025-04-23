@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="input_details.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <form id="expense-form">
+            <div class="expense-section">
+                <h2>Expense Details</h2>
+                <div class="form-group">
+                    <label for="expense-name">Expense Name</label>
+                    <input type="text" id="expense-name" placeholder="Expense Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="expense-amount">Amount</label>
+                    <input type="number" id="expense-amount" placeholder="Amount" required />
+                </div>
+                <div class="form-group">
+                    <label for="expense-category">Category</label>
+                    <select id="expense-category" required>
+                        <!-- Category options -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="expense-date">Date</label>
+                    <input type="date" id="expense-date" required />
+                </div>
+            </div>
+
+            <div class="balance-section">
+                <h2>Balance Details</h2>
+                <div class="form-group">
+                    <label for="balance">Balance</label>
+                    <input type="number" id="balance" placeholder="Balance" required />
+                </div>
+            </div>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <!-- Table Section -->
+        <div class="expense-table">
+            <h2>Expense List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-list"></tbody>
+            </table>
+            <div class="total-amount">
+                <strong>Total:</strong> Rs.<span id="total-amount">0</span>
+            </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter">
+            <label for="filter-category">Filter by Category:</label>
+            <select id="filter-category">
+                <!-- Filter category options -->
+            </select>
+        </div>
+    </div>
+</body>
