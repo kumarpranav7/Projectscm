@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top left, #b2f7ef, #a0e8af, #b2fefa);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thank-you-box {
+      background: #fff;
+      padding: 50px 40px;
+      border-radius: 25px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+      max-width: 500px;
+    }
+
+    .thank-you-box .icon {
+      font-size: 60px;
+      color: #003eb0;
+      margin-bottom: 20px;
+    }
+
+    .thank-you-box h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      color: #1b4332;
+    }
+
+    .thank-you-box p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .thank-you-box a {
+      background-color: #2d6a4f;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .thank-you-box a:hover {
+      background-color: #1b4332;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-box">
+    <div class="icon">✅</div>
+    <h1>Thank You!</h1>
+    <p>Your submission has been successfully received. We appreciate your response.</p>
+    <a href="/">Return Home</a>
+  </div>
+</body>
+</html>
